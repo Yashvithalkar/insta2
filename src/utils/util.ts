@@ -1,7 +1,6 @@
 const getImagePrefix = () => {
-    return process.env.NODE_ENV === "production"
-        ? "/E-learning/"
-        : "";
+  // No prefix in production or development if site served at root
+  return "";
 };
 
 export { getImagePrefix };
